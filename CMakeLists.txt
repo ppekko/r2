@@ -7,7 +7,7 @@ find_package(Freetype REQUIRED)
 find_package(cglm REQUIRED)
 
 set(CMAKE_C_STANDARD 99)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -fomit-frame-pointer -ffile-prefix-map='${CMAKE_CURRENT_SOURCE_DIR}/src/sources/'=")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -fomit-frame-pointer -ffile-prefix-map='${CMAKE_CURRENT_SOURCE_DIR}/src/sources/'=")
 
 file(GLOB PROJECT_HEADERS src/headers/*.h)
 file(GLOB PROJECT_SOURCES src/sources/*.c)

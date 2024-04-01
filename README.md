@@ -11,6 +11,7 @@ This project is licensed under Apache License Version 2.0, view LICENSE file for
 
 # Dependencies
  - freetype
+ - cglm
  - glad (included in project)
  - stb_truetype (included in project)
  - qoi (included in project)

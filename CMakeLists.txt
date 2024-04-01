@@ -42,3 +42,8 @@ target_include_directories(demo PRIVATE
 )
 
 file(COPY ${CMAKE_SOURCE_DIR}/demo/rsc DESTINATION ${CMAKE_BINARY_DIR})
+
+install(TARGETS ${PROJECT_NAME}
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION lib/static
+)

@@ -9,7 +9,7 @@ void r2_gl_render_col(r2_gl* gfx, Vec2 pos, Vec2 siz, Vec4 col, float rot, Vec2 
         glm_mat4_identity(model);
         glm_translate(model, (vec3){-rpos[0], -rpos[1], 0.f});
         glm_translate(model, (vec3){pos[0], pos[1], 0.f});
-        glm_rotate(model, glm_rad(rot), (vec3){0.f, 0.f, 0.f});
+        glm_rotate(model, glm_rad(rot), (vec3){0.f, 0.f, 1.f});
         vec3 scaleVec = {siz[0], siz[1], 1.f};
         glm_scale(model, scaleVec);
         glm_translate(model, (vec3){rpos[0], rpos[1], 0.f});
@@ -39,7 +39,7 @@ void r2_gl_render_circle(r2_gl* gfx, Vec2 pos, Vec2 siz, Vec4 col, float rot, Ve
         glm_mat4_identity(model);
         glm_translate(model, (vec3){-rpos[0], -rpos[1], 0.f});
         glm_translate(model, (vec3){pos[0], pos[1], 0.f});
-        glm_rotate(model, glm_rad(rot), (vec3){0.f, 0.f, 0.f});
+        glm_rotate(model, glm_rad(rot), (vec3){0.f, 0.f, 1.f});
         vec3 scaleVec = {siz[0], siz[1], 1.f};
         glm_scale(model, scaleVec);
         glm_translate(model, (vec3){rpos[0], rpos[1], 0.f});
